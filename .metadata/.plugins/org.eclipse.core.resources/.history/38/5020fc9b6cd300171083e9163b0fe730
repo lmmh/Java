@@ -1,0 +1,9 @@
+package day01;
+
+public class TestStringLength {
+   String str1 = "Hello!";
+   System.out.println(str1);
+   
+   String str2 = "ÄãºÃ£¬String";
+   System.out.println(str2.lengh());
+}

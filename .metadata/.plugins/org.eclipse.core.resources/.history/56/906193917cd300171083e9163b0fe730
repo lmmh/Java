@@ -1,0 +1,31 @@
+package shape;
+
+public class ShapeTest {
+	public static void main(String[] args) {
+		
+
+	}
+}
+
+abstract class Shape{
+	protected double c;
+	public abstract double area();
+}
+
+class Square extends Shape{
+	public Square(double c){
+		this.c = c;
+	}
+	public double area(){
+		return 0.0625*c*c;
+	}
+}
+
+class Circle extends Square{
+	public Square(double c){
+		this.c = c;
+	}
+	public double area(){
+		return 0.0775*c*c;
+	}
+}

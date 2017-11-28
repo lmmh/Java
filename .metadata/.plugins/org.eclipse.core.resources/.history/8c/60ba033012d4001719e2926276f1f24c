@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package day01;
+
+/**
+ * StringBuilder提供了用于修改字符串内容相关的方法。
+ * 其内部维护是一个可变的字符数组，所以修改都是在当前对象内部完成的。
+ * 当频繁修改字符串内容时应使用当前类来完成。
+ * @author Joshua
+ *
+ */
+public class StringBuilder {
+	public static void main(String[] args) {
+		String str = "I like pizza";
+		/*将String转换为StringBuilder
+		 * 可使用有参的构造方法。
+		 * StringBuilder也有无参的构造方法，默认表示空字符串。
+		 * 
+		 * */
+		StringBuilder builder = new StringBuilder(str);
+	}
+
+}

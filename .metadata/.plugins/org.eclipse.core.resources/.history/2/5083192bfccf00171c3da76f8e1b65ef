@@ -1,0 +1,21 @@
+package oop1;
+
+public class StaticDemo {
+	public static void main(String[] args) {
+	
+
+	}
+}
+
+class Loo{
+	int a;
+	static int b;
+	Loo(){
+		a++;
+		b++;
+	}
+	void show(){
+		System.out.println("a="+a);
+		System.out.println("b="+b);
+	}
+}
