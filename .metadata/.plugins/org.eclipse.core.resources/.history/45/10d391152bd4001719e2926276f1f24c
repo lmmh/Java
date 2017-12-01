@@ -1,0 +1,17 @@
+package day02;
+
+/**
+ * @author Joshua
+ *
+ */
+public class RegPic {
+	public static void main(String[] args) {
+         String str = "1.jpg";
+         String rege = "\\.";
+         String[] arr = str.split(rege);
+         str = System.currentTimeMillis()+"."+arr[1];
+         System.out.println(str);
+
+	}
+
+}

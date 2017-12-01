@@ -1,0 +1,20 @@
+package day03;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+import day02.Point;
+
+/**
+ * @author Joshua
+ * @version boolean contains(E e)
+ * 判断当前集合是否包含给定元素
+ *
+ */
+public class CollectionDomo1 {
+	public static void main(String[] args) {
+		Collection c = new ArrayList();
+		c.add(new Point(1,2));
+
+	}
+}

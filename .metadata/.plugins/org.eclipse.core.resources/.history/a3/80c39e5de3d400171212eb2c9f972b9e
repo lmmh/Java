@@ -1,0 +1,22 @@
+package day03;
+
+import java.util.Calendar;
+
+/**
+ * @author Joshua
+ *@version
+ *Calendar提供了针对不同时间分量单独设置值的方法。
+ *void set(int field,int value);
+ *其中第一个参数为：时间分量，例如：年，月，日等等。
+ *第二个参数为对应的值。
+ *时间分量是一个int值，使用Calendar提供的常量。
+ *
+ */
+public class CalendarDemo1 {
+	public static void main(String[] args) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.set(calendar.YEAR, 2016);
+		System.out.println(calendar.getTime());
+
+	}
+}

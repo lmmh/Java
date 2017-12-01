@@ -1,0 +1,27 @@
+package day03;
+
+import java.util.Calendar;
+
+/**
+ * @author Joshua
+ * @version
+ *  java.util Calendar
+ * 日历类
+ * 该类是一个抽象类，封装了对时间的相关操作。
+ * 常用的实现类格里高里历（阳历）
+ * 使用日历类是为了对时间进行相关的操作。比如计算时间。
+ *
+ */
+public class CalendarDemo {
+	public static void main(String[] args) {
+		/*使用Calendar的静态方法穿件实例，
+		 * 该方法会根据当前系统是在地区创建一个相应的实现，
+		 * 通常是GregorianCalendar
+		 * 默认创建的日历实例表示当前系统时间。
+		 */
+		Calendar calendar = Calendar.getInstance();
+		System.out.println(calendar);
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package day03;
+
+import java.util.Date;
+
+/**
+ * @author Joshua
+ *
+ */
+public class SimpleDateFormatDemo {
+	public static void main(String[] args) {
+		Date now = new Date();
+		System.out.println(now);
+	}
+
+}

@@ -1,0 +1,25 @@
+package day03;
+import java.util.Scanner;
+import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+/**
+ * @author Joshua
+ *
+ */
+public class DateCase {
+	public static void main(String[] args) throws ParseException {
+		System.out.println("请输入你的生日：");
+		Scanner scan = new Scanner(System.in);
+		String birthstr = scan.nextLine();
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
+		Date birth = sdf.parse(birthstr);
+		Date now = new Date();
+		long time = now.getTime()-birth.getTime();
+		time = time/1000/60/60/24;
+		System.out.println(time);
+	}
+	
+
+}

@@ -1,0 +1,15 @@
+package day03;
+import java.util.Calendar;
+/**
+ * @author Joshua
+ * @version 获取某一个时间分量所允许的最大值。如2016年共有多少天，2月共有多少天。。
+ *
+ */
+public class CalendarDemo3 {
+	public static void main(String[] args) {
+		Calendar calendar = Calendar.getInstance();
+		int days = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
+		System.out.println(days);
+	}
+
+}

@@ -1,0 +1,29 @@
+package day03;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/**
+ * @author Joshua
+ *
+ */
+public class SimpleDateFormatDemo {
+	public static void main(String[] args) {
+		Date now = new Date();
+		System.out.println(now);
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String str =  sdf.format(now);
+		System.out.println(str);
+		
+		long time = now.getTime();
+		time+=1000*60*60*24*16+1000*60*60*5+1000*60*23+1000*40;
+		now.setTime(time);
+		System.out.println(now);
+		
+		SimpleDateFormat sd = new SimpleDateFormat("yyyyƒÍMM‘¬dd»’ HH:mm:ss");
+		String sub = sd.format(now);
+		System.out.println(sub);
+	}
+
+}

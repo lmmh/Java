@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package day02;
+
+/**
+ * @author Administrator
+ *
+ */
+public class Reg {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+	String regex = "[a-zA-Z0-9_]+@[a-zA-Z0-9]+(\\.[a-zA-Z0-9]+)+";
+	System.out.println(regex);
+	String mail = "lg56578375@163.com.cn";
+	boolean flag = mail.matches(regex);
+	if(flag){
+		System.out.println(" «” œ‰");
+	}else{
+	    System.out.println("≤ª «” œ‰");	
+	}
+	
+	}
+
+}
