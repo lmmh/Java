@@ -1,0 +1,59 @@
+package day04;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
+/**
+ * @author Joshua
+ * @version 遍历集合
+ * Collection提供了统一的遍历集合元素的方式：
+ * 迭代器模式
+ * 
+ * Iterator iterator()
+ * 获取用于遍历当前集合的迭代器
+ * 
+ * java.util.Iterator使用一个接口，规定了用于遍历
+ * 集合元素的相关方法，不同的集合提供了相应的实现类。
+ * 无需记住那些实现类的名字，只将他们当做Iterator即可。
+ * 
+ * 遍历集合遵循问，取，删的步骤，其中删除不是必须操作
+ *
+ */
+public class CollectionDemo2 {
+	public static void main(String[] args) {
+		Collection c = new ArrayList();
+		c.add("one");
+		c.add("#");
+		c.add("two");
+		c.add("#");
+		c.add("three");
+		c.add("#");
+		c.add("four");
+		//获取当前集合的迭代器
+		Iterator it = c.iterator();
+		/*
+		 * boolean hasNext()问的过程该方法判断集合
+		 * 中是否还有元素可以取出
+		 * 
+		 * E next() 取得过程 获取集合的下一个元素
+		 */
+		while(it.hasNext()){
+			//要保证集合中元素都为字符串类型，返回值OBJ
+			String str = (String)it.next();
+			if("#".equals(str)){//防止空指针异常
+				/*
+				 * 在使用迭代器遍历集合时，不要使用集合的方法增删元素
+				 * 否则会发生异常。
+				 */
+				//c.remove(str);
+				/*
+				 * 迭代器提供了remove方法，用来删除 通过next方法取出来的元素。
+				 */
+				it.remove();
+			}
+			System.out.println(str);
+		}
+		System.out.println(c);
+	}
+}

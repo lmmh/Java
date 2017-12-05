@@ -1,0 +1,25 @@
+package day04;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+/**
+ * @author Joshua
+ *@version新循环遍历集合
+ *
+ */
+public class NewForDemo2 {
+	public static void main(String[] args) {
+		Collection c = new ArrayList();
+		c.add("one");
+		c.add("two");
+		c.add("three");
+		System.out.println(c);
+		//集合中取出的是对象，需要强转
+		for(Object o:c){
+			String str = (String)o;
+			System.out.println(str);
+		}
+		
+	}
+}

@@ -1,0 +1,27 @@
+package day04;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+
+/**
+ * @author Joshua
+ * @version 集合的批量操作
+ */
+public class CollectionDemo1 {
+	public static void main(String[] args) {
+	 Collection c1 = new ArrayList();
+	 c1.add("java");
+	 c1.add("php");
+	 c1.add("c++");
+	 System.out.println(c1);
+	 
+	 Collection c2 = new HashSet();
+	 c2.add("css");
+	 c2.add("html");
+	 c2.add("js");
+	 c2.add("js");
+	 System.out.println(c2);
+	 
+	}
+}

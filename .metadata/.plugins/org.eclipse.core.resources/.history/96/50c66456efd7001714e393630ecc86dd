@@ -1,0 +1,24 @@
+package day04;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author Joshua
+ *@version 取子集
+ *
+ *List subList(int start,int end);
+ *获取当前集合中指定范围内的子集，同样含头不含尾
+ */
+public class ListDemo3 {
+	public static void main(String[] args) {
+		List<Integer> list = new ArrayList<String>();
+		for(int i=0; i<10; i++){
+			list.add(i);
+		}
+		System.out.println(list);
+		List<Integer> subList = list.subList(3,8);
+		System.out.println(subList);
+		
+	}
+}

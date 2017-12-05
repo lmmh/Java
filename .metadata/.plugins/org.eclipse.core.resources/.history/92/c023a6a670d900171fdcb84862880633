@@ -1,0 +1,14 @@
+package day04;
+
+/**
+ * @author Joshua
+ * @version 排序集合元素
+ * 排序集合使用的是集合的工具类Collections
+ * 的静态方法sort。
+ * 排序仅对List集合进行。因为Set部分实现类是无序的
+ */
+public class SortListDemo {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,12 @@
+package day04;
+/**
+ * @author Joshua
+ *
+ */
+public class PointTest {
+
+	public static void main(String[] args) {
+	  
+	}
+
+}
